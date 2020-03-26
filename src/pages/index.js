@@ -13,6 +13,7 @@ export default () => {
                   linkTo
                   description
                   image {
+                      relativeDirectory
                       childImageSharp {
                           fluid(maxWidth: 320, quality: 70) {
                               ...GatsbyImageSharpFluid
@@ -25,10 +26,12 @@ export default () => {
       }
   `)
 
+  const imageData = data.allProjectImagesYaml
+
   return (
     <Container>
       <div className="masonry">
-        {data.allProjectImagesYaml.nodes.map((n, index) => {
+        {imageData.nodes.filter((n) => n.image.relativeDirectory === "projects").map((n, index) => {
           const theImage = <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title}/>
           return (
             n.linkTo && n.linkTo.length > 0 ?

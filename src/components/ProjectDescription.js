@@ -5,8 +5,32 @@ import Columns from "./Columns"
 import Column from "./Column"
 import Content from "./Content"
 import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
-const ProjectDescription = ({ imageData, children }) => {
+const ProjectDescription = ({ relativeImageDirectory, children }) => {
+
+  const data = useStaticQuery(graphql`
+      query {
+          allProjectImagesYaml {
+              nodes {
+                  title
+                  description
+                  image {
+                      relativeDirectory
+                      childImageSharp {
+                          fluid(maxWidth: 1096, quality: 70) {
+                              ...GatsbyImageSharpFluid
+                              presentationWidth
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  `)
+
+  const imageData = data.allProjectImagesYaml
+
   return (
     <Container>
       <Columns className="has-mt-5-desktop">
@@ -14,7 +38,7 @@ const ProjectDescription = ({ imageData, children }) => {
           <Content>{children}</Content>
         </Column>
         <Column>
-          {imageData.nodes.map((n, index) => (
+          {imageData.nodes.filter((n) => n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
             <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title} key={index}
                  style={{ marginBottom: "10px" }}/>
           ))
@@ -29,5 +53,5 @@ export default ProjectDescription
 
 ProjectDescription.propTypes = {
   children: PropTypes.node.isRequired,
-  imageData: PropTypes.object,
+  relativeImageDirectory: PropTypes.string,
 }

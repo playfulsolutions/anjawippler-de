@@ -1,4 +1,4 @@
-- image: blueberries.jpg
+- image: "blueberries.jpg"
   title: "Blaubeeren"
   description: "Ein Bild mit Blaubeeren"
   linkTo: "/flortrait"
@@ -6,19 +6,19 @@
   title: "Kirschen"
   description: ""
   linkTo: ""
-- image: cherries.jpg
+- image: "cherries.jpg"
   title: "Kirschen"
   description: ""
   linkTo: ""
-- image: oranges-pomegranates.jpg
+- image: "oranges-pomegranates.jpg"
   title: ""
   description: ""
   linkTo: "/flortrait"
-- image: cherry-plant.jpg
+- image: "cherry-plant.jpg"
   title: ""
   description: ""
   linkTo: "/flortrait"
-- image: easter-eggs.jpg
+- image: "easter-eggs.jpg"
   title: ""
   description: ""
   linkTo: "/flortrait"
