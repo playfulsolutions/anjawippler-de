@@ -32,14 +32,15 @@ class Menu extends React.Component {
       <nav className="navbar is-fixed-top is-white" style={{ borderBottom: "1px solid black" }}>
         <div className="container">
           <div className="navbar-brand">
-            <Link to={'/'} className="navbar-item is-secondary-link">
+            <Link to={"/"} className="navbar-item is-secondary-link">
               <div>
                 <h1 className="title is-4">Anja Wippler</h1>
                 <h2 className="subtitle">Industriedesign</h2>
               </div>
             </Link>
             <span className={classNames("navbar-burger burger", { "is-active": this.state.menuActive })}
-                  data-target="navbarMenu" onClick={this.toggleMenu}>
+                  data-target="navbarMenu" onClick={this.toggleMenu} onKeyPress={this.toggleMenu} role="button"
+                  tabIndex={0}>
                   <span/>
                   <span/>
                   <span/>
