@@ -38,7 +38,7 @@ const ProjectDescription = ({ relativeImageDirectory, children }) => {
           <Content>{children}</Content>
         </Column>
         <Column>
-          {imageData.nodes.filter((n) => n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
+          {imageData.nodes.filter((n) => n.image && n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
             <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title} key={index}
                  style={{ marginBottom: "10px" }}/>
           ))

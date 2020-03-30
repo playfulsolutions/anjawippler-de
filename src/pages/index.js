@@ -31,7 +31,7 @@ export default () => {
   return (
     <Container>
       <div className="masonry">
-        {imageData.nodes.filter((n) => n.image.relativeDirectory === "projects").map((n, index) => {
+        {imageData.nodes.filter((n) => n.image && n.image.relativeDirectory === "projects").map((n, index) => {
           const theImage = <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title}/>
           return (
             n.linkTo && n.linkTo.length > 0 ?
