@@ -6,8 +6,9 @@ import Column from "./Column"
 import Content from "./Content"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import SEO from "./SEO"
 
-const ProjectDescription = ({ relativeImageDirectory, children }) => {
+const ProjectDescription = ({ title, relativeImageDirectory, children }) => {
 
   const data = useStaticQuery(graphql`
       query {
@@ -19,7 +20,7 @@ const ProjectDescription = ({ relativeImageDirectory, children }) => {
                       relativeDirectory
                       childImageSharp {
                           fluid(maxWidth: 1096, quality: 70) {
-                              ...GatsbyImageSharpFluid
+                              ...GatsbyImageSharpFluid_withWebp
                               presentationWidth
                           }
                       }
@@ -32,26 +33,30 @@ const ProjectDescription = ({ relativeImageDirectory, children }) => {
   const imageData = data.allProjectImagesYaml
 
   return (
-    <Container>
-      <Columns className="has-mt-5-desktop">
-        <Column size={"is-one-third"} className="has-mr-5-desktop is-sticky-top-desktop">
-          <Content>{children}</Content>
-        </Column>
-        <Column>
-          {imageData.nodes.filter((n) => n.image && n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
-            <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title} key={index}
-                 style={{ marginBottom: "10px" }}/>
-          ))
-          }
-        </Column>
-      </Columns>
-    </Container>
+    <React.Fragment>
+      <SEO title={title}/>
+      <Container>
+        <Columns className="has-mt-5-desktop">
+          <Column size={"is-one-third"} className="has-mr-5-desktop is-sticky-top-desktop">
+            <Content>{children}</Content>
+          </Column>
+          <Column>
+            {imageData.nodes.filter((n) => n.image && n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
+              <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title} key={index}
+                   style={{ marginBottom: "10px" }}/>
+            ))
+            }
+          </Column>
+        </Columns>
+      </Container>
+    </React.Fragment>
   )
 }
 
 export default ProjectDescription
 
 ProjectDescription.propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
   relativeImageDirectory: PropTypes.string,
 }
