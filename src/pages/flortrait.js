@@ -7,21 +7,26 @@ export default () => {
   return (
     <ProjectDescription relativeImageDirectory="projects/flortrait">
       <h1>Flortrait</h1>
+      <h2>Bühne frei für frische Blumen</h2>
       <p>
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Etiam porta sem malesuada magna mollis euismod.
+        Das Flortrait ist ein Wohnaccessoire das alle Blicke auf sich zieht. Die Silhouette einer Vase und ein
+        Wasserglas verbinden sich zu einem dreidimensionalen Objekt, welches an der Wand zu schweben scheint.
+        Dieses lebendige Stillleben muss nie weichen um Platz für ein Festgelage auf dem Esstisch zu schaffen.
       </p>
       <p>
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Etiam porta sem malesuada magna mollis euismod.
+        In Kombination aus industrieller Herstellung (Lasercut), handwerklicher Veredlung und der individuellen
+        Oberfläche des Naturmaterials Holz entstehen Unikate in Kleinserien.
       </p>
       <p>
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Etiam porta sem malesuada magna mollis euismod.
+        Prototyp in Zusammenarbeit mit Max Böhme
       </p>
+      <p>
+        <a href="https://selekkt.com/vase-fur-die-wand-flortrait-natur.html">Kaufen.</a>
+      </p>
+      <p>
+      <a href="http://google.com">Hier geht es zu Google.</a>
+      </p>
+
     </ProjectDescription>
   )
 }
