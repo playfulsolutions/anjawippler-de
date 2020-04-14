@@ -4,3 +4,7 @@ $tile-spacing: 0.5rem;
 $turquoise: #008490;
 $link: $turquoise;
 
+@import "../fonts/lato.css";
+@import "../fonts/roboto.css";
+
+$family-sans-serif: 'Lato', sans-serif;

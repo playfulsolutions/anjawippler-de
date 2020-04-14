@@ -16,7 +16,6 @@
 .masonry .brick img {
   //transition: all .5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
-  max-width: 719px;
 }
 
 .masonry .brick:hover div {

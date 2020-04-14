@@ -34,8 +34,8 @@ class Menu extends React.Component {
           <div className="navbar-brand">
             <Link to={"/"} className="navbar-item is-secondary-link">
               <div>
-                <h1 className="title is-4">Anja Wippler</h1>
-                <h2 className="subtitle">Industriedesign</h2>
+                <h1 className="title is-5">Anja Wippler</h1>
+                <h2 className="subtitle">Design & Illustration</h2>
               </div>
             </Link>
             <span className={classNames("navbar-burger burger", { "is-active": this.state.menuActive })}
