@@ -1,12 +1,13 @@
 import React from "react"
 import ProjectDescription from "../components/ProjectDescription"
+import WebLink from "../components/WebLink"
 
 
 export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/Cranach">
-      <h1 className="title is-size-5">Pop up Cranach</h1>
+      <h1>Pop up Cranach</h1>
       <h2>Kunstgeschichte erleben</h2>
       <p>
         Im Austausch mit einem multidisziplinären Team aus KunsthistorikerInnen, GestalterInnnen und PädagogInnen entwickelte ich ein Konzept für eine Kinderausstellung
@@ -21,9 +22,9 @@ export default () => {
         Kinder können in dieser Ausstellung die Perspektive wechseln, Augen anprobieren, Farben riechen, durch die Schichten eines historischen Gemäldes klettern,
         auf Spurensuche gehen, mit Werkzeugen und Forschungsmethoden experimentieren, in verschiedene Rollen schlüpfen und natürlich selbst kreativ werden.
       </p>
-
-      <p>für das
-        <a href="https://alice-museum-fuer-kinder.fez-berlin.de/rueckblick/pop-up-cranach/"> Alice Kindermuseum im FEZ Berlin</a>
+      <hr/>
+      <p>
+        Für das <WebLink to="https://alice-museum-fuer-kinder.fez-berlin.de/rueckblick/pop-up-cranach/"> Alice Kindermuseum im FEZ Berlin</WebLink>
       </p>
     </ProjectDescription>
   )

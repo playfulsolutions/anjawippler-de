@@ -6,7 +6,7 @@ export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/explore-to-move">
-      <h1 className="title is-size-5">explore to move</h1>
+      <h1>explore to move</h1>
       <h2>Menschen und Dinge bewegen</h2>
       <p>
         Häufige Wohnortwechsel machen zahlreiche Menschen zu modernen Nomaden. Mobilität spielt eine tragende Rolle in unserer Gesellschaft.

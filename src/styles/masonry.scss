@@ -47,6 +47,7 @@
 /* Masonry on big screens */
 @include desktop {
   .masonry {
+    columns: 4;
     column-count: 4;
   }
 }
@@ -54,6 +55,7 @@
 /* Masonry on tablets */
 @include until($desktop) {
   .masonry {
+    columns: 2;
     column-count: 2;
   }
 }
@@ -62,5 +64,6 @@
 @include until($tablet - 1px) {
   .masonry {
     column-count: 1;
+    columns: 1;
   }
 }

@@ -1,12 +1,13 @@
 import React from "react"
 import ProjectDescription from "../components/ProjectDescription"
+import WebLink from "../components/WebLink"
 
 
 export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/EJS">
-      <h1 className="title is-size-5">maxi.mal</h1>
+      <h1>maxi.mal</h1>
       <h2>Schnittstelle als Installation</h2>
       <p>
         Der Auftrag eine Hilfe zur selbstständigen beruflichen Orientierung zu entwickeln führt uns ins Wendland. Dort lernen SchülerInnen mit besonderem Förderbedarf
@@ -28,11 +29,12 @@ export default () => {
         lenken die selbstständige Recherche. Als sichtbares Pendant zum verfügbaren Erfahrungsschatz der SchülerInnen wächst auch "maxi.mal“. Ein Projektplan und Beratungsangebot für
         die Umsetzung an der Schule runden unsere Arbeit ab.
       </p>
+      <hr/>
       <p>
-        in Zusammenarbeit mit Charlotte Ehrt
+        In Zusammenarbeit mit Charlotte Ehrt
       </p>
       <p>
-        <a href="http://www.elbe-jeetzel-schule.de">zur Elbe-Jeetzel-Schule.</a>
+        <WebLink to="http://www.elbe-jeetzel-schule.de">zur Elbe-Jeetzel-Schule.</WebLink>
       </p>
     </ProjectDescription>
   )

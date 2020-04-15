@@ -16,7 +16,7 @@
 
 .has-mr-5-desktop {
   @include desktop {
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 }
 
@@ -28,7 +28,8 @@
 
 .is-sticky-top-desktop {
   @include desktop {
-    height: 90vh;
+    height: 100%;
+    min-height: 100%;
     position: sticky;
     top: 80px;
   }
@@ -67,6 +68,21 @@
   }
 }
 
-.content > p {
-  font-family: "Roboto", sans-serif;
+.content.project-description {
+
+  h1 {
+    color: $subtitle-color;
+    font-size: $subtitle-size;
+    font-weight: $subtitle-weight;
+    line-height: $subtitle-line-height;
+    margin-bottom: 0.9rem;
+  }
+
+  h2 {
+    margin-top: 0 !important;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+  }
 }

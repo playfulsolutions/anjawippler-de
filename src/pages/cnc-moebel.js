@@ -6,7 +6,7 @@ export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/cnc-moebel">
-      <h1 className="title is-size-5">Packwild und Zweikeiler</h1>
+      <h1>Packwild und Zweikeiler</h1>
       <h2>Tierisch eingerichtet</h2>
       <p>
         Form und Anatomie dieser Möbel folgen den Anforderungen stabil und standfest zu sein,
@@ -18,8 +18,9 @@ export default () => {
         für die Herstellung von Packwild und Zweikeiler mit der CNC Fräse übersetzt. Das ermöglicht eine leichte Skalierbarkeit
         der Möbelstücke entsprechend ihres Einsatzortes sowie eine kostengünstige, möglicherweise sogar dezentrale Produktion entsprechend der Nachfrage.
       </p>
+      <hr/>
       <p>
-       in Zusammenarbeit mit Max Böhme
+       In Zusammenarbeit mit Max Böhme
       </p>
     </ProjectDescription>
   )

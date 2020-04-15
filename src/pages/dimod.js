@@ -1,12 +1,13 @@
 import React from "react"
 import ProjectDescription from "../components/ProjectDescription"
+import WebLink from "../components/WebLink"
 
 
 export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/Dimod">
-      <h1 className="title is-size-5">dimod</h1>
+      <h1>dimod</h1>
       <h2>Medizin und Mode</h2>
       <p>
         Dimod steht für funktionelle Mode, die den besonderen Anforderungen verschiedener medizinischer Hilfsmittel auf charmante Art und Weise gerecht wird.
@@ -21,9 +22,9 @@ export default () => {
         in der Öffentlichkeit wird ermöglicht. Zusätzlich ist das Kleid in Länge und Erscheinungsbild entsprechend dem Anlass variabel. Diese und andere individuelle
         Anforderungen können auf Kundenwunsch umgesetzt werden.
       </p>
-
-      <p>in Zusammenarbeit mit der
-        <a href="https://www.instagram.com/massschneiderei_wippler/?hl=de"> Massschneiderei Wippler</a>
+      <hr/>
+      <p>In Zusammenarbeit mit der
+        <WebLink to="https://www.instagram.com/massschneiderei_wippler/?hl=de"> Massschneiderei Wippler</WebLink>
       </p>
     </ProjectDescription>
   )

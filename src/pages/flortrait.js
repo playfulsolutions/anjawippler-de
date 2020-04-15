@@ -1,5 +1,6 @@
 import React from "react"
 import ProjectDescription from "../components/ProjectDescription"
+import WebLink from "../components/WebLink"
 
 
 export default () => {
@@ -17,14 +18,12 @@ export default () => {
         In Kombination aus industrieller Herstellung (Lasercut), handwerklicher Veredlung und der individuellen
         Oberfläche des Naturmaterials Holz entstehen Unikate in Kleinserien.
       </p>
+      <hr/>
       <p>
         Prototyp in Zusammenarbeit mit Max Böhme
       </p>
       <p>
-        <a href="https://selekkt.com/vase-fur-die-wand-flortrait-natur.html">Kaufen.</a>
-      </p>
-      <p>
-      <a href="http://google.com">Hier geht es zu Google.</a>
+        <WebLink to="https://selekkt.com/vase-fur-die-wand-flortrait-natur.html">Kaufen.</WebLink>
       </p>
 
     </ProjectDescription>

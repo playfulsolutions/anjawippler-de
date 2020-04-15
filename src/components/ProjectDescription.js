@@ -38,12 +38,12 @@ const ProjectDescription = ({ title, relativeImageDirectory, children }) => {
       <Container>
         <Columns className="has-mt-5-desktop">
           <Column size={"is-one-third"} className="has-mr-5-desktop is-sticky-top-desktop">
-            <Content>{children}</Content>
+            <Content className={"project-description"}>{children}</Content>
           </Column>
           <Column>
             {imageData.nodes.filter((n) => n.image && n.image.relativeDirectory === relativeImageDirectory).map((n, index) => (
               <Img fluid={n.image.childImageSharp.fluid} alt={n.description} title={n.title} key={index}
-                   style={{ marginBottom: "10px" }}/>
+                   style={{ marginBottom: "1rem" }}/>
             ))
             }
           </Column>

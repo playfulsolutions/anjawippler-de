@@ -6,7 +6,7 @@ export default () => {
 
   return (
     <ProjectDescription relativeImageDirectory="projects/ArtMonster">
-      <h1 className="title is-size-5">Art Caps & Monsterfootsteps</h1>
+      <h1>Art Caps & Monsterfootsteps</h1>
       <h2>Objekte, die zum Spielen verleiten</h2>
       <p>
         Für eine sommerliche Mitmachausstellung im halböffentlichen Raum nahm ich die Herausforderung an, ein
