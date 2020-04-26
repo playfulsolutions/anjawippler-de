@@ -20,6 +20,12 @@
   }
 }
 
+.has-mr-6-desktop {
+  @include desktop {
+    margin-right: 7rem;
+  }
+}
+
 .has-mt-5-desktop {
   @include desktop {
     margin-top: 3rem;
@@ -69,7 +75,6 @@
 }
 
 .content.project-description {
-
   h1 {
     color: $subtitle-color;
     font-size: $subtitle-size;
@@ -85,4 +90,9 @@
   p {
     font-family: "Roboto", sans-serif;
   }
+}
+
+.slim-title {
+  font-weight: $subtitle-weight !important;
+  line-height: $subtitle-line-height !important;
 }

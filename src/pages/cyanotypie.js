@@ -13,11 +13,11 @@ export default () => {
         Diese freie Arbeit spiegelt meine Leidenschaft für die Schönheit von Insekten, Fotografie und die Lust am Erkunden unterschiedlicher Materialien und Techniken wider.
       </p>
       <p>
-        Makroaufnahmen von Insekten wurden digital bearbeitet um als Negative bei der Belichtung diverser Untergründe mit der historischen Edeldrucktechnik
-        Cyanotypie eingesetzt werden zu können. Zufall und Experiment verleihen den Ergebnissen ihren besonderen Charakter.
+        Makroaufnahmen von Insekten wurden digital bearbeitet, um als Negative bei der Belichtung diverser Untergründe mit der historischen Edeldrucktechnik
+        Cyanotypie eingesetzt werden zu können.
       </p>
       <p>
-        Unikate und ein Postkartenset entstehen.
+        Unikate und ein Postkartenset entstehen. Zufall und Experiment verleihen den Ergebnissen ihren besonderen Charakter.
       </p>
       <hr/>
       <p>

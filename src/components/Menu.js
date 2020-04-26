@@ -51,8 +51,8 @@ class Menu extends React.Component {
               <Link to={"/"} className="navbar-item" activeClassName={"is-active"} onClick={this.closeMenu}>
                 Projekte
               </Link>
-              <Link to={"/about"} className="navbar-item" activeClassName={"is-active"} onClick={this.closeMenu}>
-                Die Designerin
+              <Link to={"/ueber-mich"} className="navbar-item" activeClassName={"is-active"} onClick={this.closeMenu}>
+                Über mich
               </Link>
             </div>
           </div>

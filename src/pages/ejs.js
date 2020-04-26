@@ -10,17 +10,17 @@ export default () => {
       <h1>maxi.mal</h1>
       <h2>Schnittstelle als Installation</h2>
       <p>
-        Der Auftrag eine Hilfe zur selbstständigen beruflichen Orientierung zu entwickeln führt uns ins Wendland. Dort lernen SchülerInnen mit besonderem Förderbedarf
-        im sozial- emotionalen Bereich an der Elbe- Jeetzel- Schule. Einige sind von Autismus- Spektrum- Störungen betroffen.
+        Der Auftrag eine Hilfe zur selbstständigen beruflichen Orientierung zu entwickeln, führt uns ins Wendland. Dort lernen SchülerInnen mit besonderem Förderbedarf im
+        sozial-emotionalen Bereich an der Elbe-Jeetzel-Schule. Einige sind von Autismus-Spektrum-Störungen betroffen.
       </p>
       <p>
-        Wir konzipieren einen Workshop, den wir mit SchülerInnen und LehrerInnen vor Ort durchführen. So entsteht eine vertrauensvolle Gesprächsbasis mit unserer Zielgruppe.
-        Behutsam erforschen wir die Ressourcen, Wünsche und Schwierigkeiten der Jugendlichen und PädagogInnen.
+        Wir konzipierten einen Workshop, den wir mit SchülerInnen und LehrerInnen vor Ort durchführten. So entstand eine vertrauensvolle Gesprächsbasis mit unserer Zielgruppe.
+        Behutsam erforschten wir die Ressourcen, Wünsche und Schwierigkeiten der Jugendlichen und PädagogInnen.
       </p>
       <p>
-        Die Analyse der Ergebnisse zeigt, dass die Entwicklung von Kommunikationshilfen für die SchülerInnen untereinander im Mittelpunkt steht. Genauso gefragt ist Unterstützung
-        für den Austausch mit Ausbildungs- und Praktikumsbetrieben. Begleitend werden Ideen zum gezielten Einsatz vorhandener digitaler Medien und zur Erweiterung des Erfahrungshorizontes
-        der Heranwachsenden gesucht.
+        Die Analyse der Ergebnisse zeigte, dass die Entwicklung von Kommunikationshilfen für die SchülerInnen untereinander im Mittelpunkt steht. Genauso wichtig war die Unterstützung
+        des Austauschs mit Ausbildungs- und Praktikumsbetrieben, das Einbinden und kanalisieren digitaler Medien sowie das Schaffen von Möglichkeiten, um den Erfahrungshorizont der
+        Heranwachsenden zu erweitern.
       </p>
       <p>
         Wir entwickeln ein Konzept, welches Hilfsmittel zum Medieneinsatz bei der Suche und Auswertung von Berufspraktika sowie Vorschläge zur Gestaltung regelmäßiger Veranstaltungen
