@@ -4,7 +4,7 @@ import classNames from "classnames"
 
 const Column = ({ children, size, className }) => {
   return (
-    <div className={classNames("column", className, size)}>{children}</div>
+    <div className={classNames("column", size, className)}>{children}</div>
   )
 }
 
@@ -34,6 +34,7 @@ Column.propTypes = {
     "is-full",
     "is-four-fifths",
     "is-three-fifths",
+    "is-three-fifths-tablet",
     "is-two-fifths",
     "is-one-fifth",
   ]),

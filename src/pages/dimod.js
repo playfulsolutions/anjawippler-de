@@ -24,8 +24,8 @@ export default () => {
         Anforderungen können auf Kundenwunsch umgesetzt werden.
       </p>
       <hr/>
-      <p>In Zusammenarbeit mit der
-        <WebLink to="https://www.instagram.com/massschneiderei_wippler/?hl=de"> Massschneiderei Wippler</WebLink>
+      <p>
+        In Zusammenarbeit mit der <WebLink to="https://www.massschneiderei-wippler.de/">Massschneiderei Wippler</WebLink>
       </p>
     </ProjectDescription>
   )

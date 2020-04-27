@@ -21,14 +21,14 @@ export default () => {
       }
   `)
 
-  const now = new Date()
-  let greetTxt
-  if (now.getHours() > 18 <= 3) {
-    greetTxt = "Guten Abend"
-  } else if (now.getHours() >= 4 < 9) {
-    greetTxt = "Guten Morgen"
+  const now = new Date().getHours()
+  let greeting
+  if ([18, 19, 20, 21, 22, 23, 0, 1, 2].includes(now)) {
+    greeting = "Guten Abend"
+  } else if ([5, 6, 7, 8, 9, 10].includes(now)) {
+    greeting = "Guten Morgen"
   } else {
-    greetTxt = "Hallo"
+    greeting = "Hallo"
   }
 
   return (
@@ -37,16 +37,19 @@ export default () => {
       <Container className="has-mt-5-desktop">
         <Columns>
           <Column className="has-mr-6-desktop">
-            <div style={{ "margin-bottom": "1.7rem" }}><Img fluid={data.img.childImageSharp.fluid}/></div>
-            <h1 className={"slim-title is-size-3"} style={{ "margin-bottom": "0.5rem" }}>Kontakt</h1>
-            <p>
-              +49 (0) 176 215 349 66<br/>
-              anja.wippler(a)icloud.com</p>
-            <p></p>
+            <div style={{ "marginBottom": "1.7rem" }}><Img fluid={data.img.childImageSharp.fluid}/></div>
+              <Content className="is-hidden-mobile">
+                <hr/>
+                <h1 className={"slim-title is-size-3"} style={{ "marginBottom": "0.5rem" }}>Kontakt</h1>
+                <p>
+                  T: +49 (0) 176 215 349 66<br/>
+                  M: anja.wippler@icloud.com
+                </p>
+              </Content>
           </Column>
-          <Column size={"is-three-fifths"}>
+          <Column size={"is-three-fifths-tablet"}>
             <Content>
-              <h1 className={"title is-size-2"} style={{ "margin-bottom": "3rem" }}>{greetTxt}</h1>
+              <h1 className={"title is-size-2"} style={{ "marginBottom": "3rem" }}>{greeting}</h1>
               <p>
                 Schon als Kind zeigte ich eine Leidenschaft für Illustration und Design, indem ich rollenweise Tapeten
                 bekritzelte.
@@ -87,10 +90,17 @@ export default () => {
                 für den Nutzer. Das sind neben ökonomischen und ökologischen Aspekten sowie Kundenwünschen die
                 Leitlinien meiner gestalterischen Entscheidungen.
               </p>
-
             </Content>
           </Column>
         </Columns>
+        <Content className="is-hidden-desktop">
+          <hr/>
+          <h1 className={"slim-title is-size-3"} style={{ "marginBottom": "0.5rem" }}>Kontakt</h1>
+          <p>
+            +49 (0) 176 215 349 66<br/>
+            anja.wippler@icloud.com
+          </p>
+        </Content>
       </Container>
     </React.Fragment>
   )

@@ -37,7 +37,7 @@ const ProjectDescription = ({ title, relativeImageDirectory, children }) => {
       <SEO title={title}/>
       <Container>
         <Columns className="has-mt-5-desktop">
-          <Column size={"is-one-third"} className="has-mr-5-desktop is-sticky-top-desktop">
+          <Column size={"is-one-third"} className="has-mr-6-desktop is-sticky-top-desktop">
             <Content className={"project-description"}>{children}</Content>
           </Column>
           <Column>

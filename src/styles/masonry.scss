@@ -10,6 +10,7 @@
   margin-bottom: 5px;
   display: inline-block; /* Fix the misalignment of items */
   vertical-align: top; /* Keep the item on the very top */
+  cursor: default
 }
 
 /* Masonry image effects */
@@ -18,9 +19,12 @@
   backface-visibility: hidden; /* Remove Image flickering on hover */
 }
 
-.masonry .brick:hover div {
-  opacity: .45;
-  cursor: pointer;
+.masonry > a > div {
+  cursor: pointer !important;
+
+  &:hover {
+    opacity: .45;
+  }
 }
 
 /* Bordered masonry */

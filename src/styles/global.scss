@@ -9,10 +9,36 @@
 @import "~bulma/sass/elements/title";
 @import "~bulma/sass/elements/other";
 @import "~bulma/sass/components/navbar";
+@import "~bulma/sass/components/level";
 @import "~bulma/sass/grid/columns";
 @import "~bulma/sass/layout/section";
 @import "~bulma/sass/layout/footer";
 @import "masonry";
+
+.navbar.is-white {
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(1.8) blur(20px);
+
+  &.is-fixed-top {
+    border-bottom: 1px solid $dark;
+  }
+}
+
+.navbar-menu.is-active {
+  background-color: transparent;
+}
+
+@include mobile {
+  .navbar-item.is-active {
+    border-right: 1px solid $dark;
+    border-left: 1px solid $dark;
+    color: $text-strong !important;
+  }
+}
+
+.footer {
+  border-top: 1px solid $grey-lighter;
+}
 
 .has-mr-5-desktop {
   @include desktop {
@@ -43,7 +69,7 @@
 
 .is-secondary-link {
   &:focus, &:active, &:hover {
-    background-color: $white !important;
+    background-color: transparent !important;
   }
 }
 
@@ -85,8 +111,12 @@
 
   h2 {
     margin-top: 0 !important;
+    font-size: 2rem;
+    margin-bottom: 3rem;
   }
+}
 
+.content {
   p {
     font-family: "Roboto", sans-serif;
   }

@@ -29,7 +29,7 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-fixed-top is-white" style={{ borderBottom: "1px solid black" }}>
+      <nav className="navbar is-fixed-top is-white">
         <div className="container">
           <div className="navbar-brand">
             <Link to={"/"} className="navbar-item is-secondary-link">
@@ -46,7 +46,7 @@ class Menu extends React.Component {
                   <span/>
                 </span>
           </div>
-          <div id="navbarMenu" className={classNames("navbar-menu", { "is-active": this.state.menuActive })}>
+          <div id="navbarMenu" className={classNames("navbar-menu", { "is-active": this.state.menuActive }, "is-size-5-mobile")}>
             <div className="navbar-end">
               <Link to={"/"} className="navbar-item" activeClassName={"is-active"} onClick={this.closeMenu}>
                 Projekte
