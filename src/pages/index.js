@@ -16,7 +16,7 @@ export default () => {
                       relativeDirectory
                       childImageSharp {
                           fluid(maxWidth: 320, quality: 70) {
-                              ...GatsbyImageSharpFluid_withWebp
+                              ...GatsbyImageSharpFluid_withWebp_tracedSVG
                               presentationWidth
                           }
                       }

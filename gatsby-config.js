@@ -3,6 +3,7 @@ module.exports = {
     title: `Anja Wippler - Industriedesign`,
     description: `Website der Industriedesignerin Anja Wippler`,
     author: `Anja Wippler`,
+    siteUrl: "https://anjawippler.de",
   },
   plugins: [
     {
@@ -35,6 +36,8 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
