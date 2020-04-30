@@ -12,7 +12,7 @@ export default () => {
       <p>Illustration und Umschlaggestaltung.</p>
       <hr/>
       <p>
-        <WebLink href="https://selekkt.com/playfulsolutions-notizheft-mit-vogel-illustration-meise.html">Kaufen.</WebLink>
+        <WebLink to="https://selekkt.com/playfulsolutions-notizheft-mit-vogel-illustration-meise.html">Kaufen.</WebLink>
       </p>
     </ProjectDescription>
   )
