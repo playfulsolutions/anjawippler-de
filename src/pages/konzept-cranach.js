@@ -10,7 +10,7 @@ export default () => {
       <h1>Pop up Cranach</h1>
       <h2>Kunstgeschichte erleben</h2>
       <p>
-        Im Austausch mit einem multidisziplinären Team aus KunsthistorikerInnen, GestalterInnnen und PädagogInnen entwickelte ich ein Konzept für eine Kinderausstellung
+        Im Austausch mit einem multidisziplinären Team aus KunsthistorikerInnen, GestalterInnen und PädagogInnen entwickelte ich ein Konzept für eine Kinderausstellung
         über Lukas Cranach. Im Mittelpunkt steht das spielerische Entdecken und selbstständige Erfassen von Zusammenhängen. Komplexe Inhalte werden auch für Erwachsene ansprechend mit
         wenig Text vermittelt.
       </p>

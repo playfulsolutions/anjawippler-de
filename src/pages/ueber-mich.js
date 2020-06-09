@@ -81,15 +81,11 @@ export default () => {
                 Bearbeitungsmöglichkeiten – von Holz über Wabenkernstrukturen und
                 Tyvek bis zu smarten Formgedächtnislegierungen oder Biocomposites.
               </p>
-
               <p>
-                Ein gelungenes Produkt ist für mich intuitiv, wird mit Freude genutzt und benötigt keine
-                Bedienungsanleitung. Schönheit entsteht durch Reduktion und Einfachheit,
-                ohne das Ergebnis dabei beliebig oder charakterlos werden zu lassen. Wenn ein Produkt die Zielgruppe
-                emotional oder sinnlich anspricht, steigert das seinen Wert
-                für den Nutzer. Das sind neben ökonomischen und ökologischen Aspekten sowie Kundenwünschen die
-                Leitlinien meiner gestalterischen Entscheidungen.
+                Das Flortrait, exTENTed und Octo.puz haben Anerkennungen in Form von Designpreisen und Nominierungen erhalten.
               </p>
+
+
             </Content>
           </Column>
         </Columns>

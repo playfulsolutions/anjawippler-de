@@ -20,7 +20,7 @@ export default () => {
       </p>
       <hr/>
       <p>
-        Prototyp in Zusammenarbeit mit Max Böhme
+        2013 Designpreis "Platz für Ideen" der IKEA Stiftung für das Flortrait.
       </p>
       <p>
         <WebLink to="https://selekkt.com/vase-fur-die-wand-flortrait-natur.html">Kaufen.</WebLink>
